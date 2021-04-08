@@ -15,6 +15,7 @@ const idx = {
 
   '/idp/idx/introspect': [
     'identify',
+    // 'error-with-failure-redirect',
     // 'error-feature-not-enabled',
     // 'error-403-security-access-denied',
     // 'authenticator-enroll-email',
@@ -89,6 +90,7 @@ const idx = {
     // 'identify-with-only-one-third-party-idp',
     // 'error-identify-access-denied',
     // 'error-identify-user-locked-unable-challenge'
+    // 'error-with-failure-redirect',
   ],
   '/idp/idx/challenge/answer': [
     // 'error-email-verify',

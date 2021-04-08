@@ -201,6 +201,9 @@ const VIEWS_MAPPING = {
     [AUTHENTICATOR_KEY.PHONE]: ChallengeAuthenticatorDataPhoneView,
     [AUTHENTICATOR_KEY.OV]: ChallengeAuthenticatorDataOktaVerifyView
   },
+  [RemediationForms.FAILURE_REDIRECT]: {
+    [DEFAULT]: SuccessView,
+  },
   [RemediationForms.SUCCESS_REDIRECT]: {
     [DEFAULT]: SuccessView,
   },
