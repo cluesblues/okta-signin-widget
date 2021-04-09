@@ -6,9 +6,9 @@ import { BaseView } from './internals';
 import IdentifierView from './views/IdentifierView';
 import IdentifyRecoveryView from './views/IdentifyRecoveryView';
 
-// Terminal & Success
+// Terminal & Auto-Redirect
 import TerminalView from './views/TerminalView';
-import SuccessView from './views/SuccessView';
+import AutoRedirectView from './views/AutoRedirectView';
 
 // safe mode poll view
 import PollView from './views/PollView';
@@ -202,10 +202,10 @@ const VIEWS_MAPPING = {
     [AUTHENTICATOR_KEY.OV]: ChallengeAuthenticatorDataOktaVerifyView
   },
   [RemediationForms.FAILURE_REDIRECT]: {
-    [DEFAULT]: SuccessView,
+    [DEFAULT]: AutoRedirectView,
   },
   [RemediationForms.SUCCESS_REDIRECT]: {
-    [DEFAULT]: SuccessView,
+    [DEFAULT]: AutoRedirectView,
   },
   [RemediationForms.REDIRECT_IDP]: {
     // `redirect-idp` remediation object looks similar to identifier view.

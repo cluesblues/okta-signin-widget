@@ -255,7 +255,6 @@ const convert = (settings, idx = {}, lastResult = null) => {
   // transform result object
   if (isError(result) && isFailureRedirect(result)) {
     handleFailureRedirect(settings, result);
-    return result;
   }
 
   // Override the `result` to handle custom IdP login buttons
